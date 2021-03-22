@@ -45,11 +45,10 @@ namespace Organizer
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ButtonsLayout = new System.Windows.Forms.TableLayoutPanel();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.StudentsInfo = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.добавитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
             this.MainLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsDataGrid)).BeginInit();
             this.ButtonsLayout.SuspendLayout();
@@ -171,7 +170,7 @@ namespace Organizer
             this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.ButtonsLayout.Controls.Add(this.DeleteButton, 0, 0);
-            this.ButtonsLayout.Controls.Add(this.button3, 0, 0);
+            this.ButtonsLayout.Controls.Add(this.StudentsInfo, 0, 0);
             this.ButtonsLayout.Controls.Add(this.AddButton, 0, 0);
             this.ButtonsLayout.Controls.Add(this.UpdateButton, 0, 0);
             this.ButtonsLayout.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -191,16 +190,18 @@ namespace Organizer
             this.DeleteButton.TabIndex = 6;
             this.DeleteButton.Text = "Удалить";
             this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // button3
+            // StudentsInfo
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(597, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 37);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Неуспевающие";
-            this.button3.UseVisualStyleBackColor = true;
+            this.StudentsInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StudentsInfo.Location = new System.Drawing.Point(597, 3);
+            this.StudentsInfo.Name = "StudentsInfo";
+            this.StudentsInfo.Size = new System.Drawing.Size(194, 37);
+            this.StudentsInfo.TabIndex = 5;
+            this.StudentsInfo.Text = "Информация";
+            this.StudentsInfo.UseVisualStyleBackColor = true;
+            this.StudentsInfo.Click += new System.EventHandler(this.StudentsInfo_Click);
             // 
             // AddButton
             // 
@@ -222,6 +223,7 @@ namespace Organizer
             this.UpdateButton.TabIndex = 3;
             this.UpdateButton.Text = "Редактировать";
             this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // добавитьПользователяToolStripMenuItem
             // 
@@ -241,8 +243,6 @@ namespace Organizer
             this.Text = "Студенты";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.MainLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudentsDataGrid)).EndInit();
             this.ButtonsLayout.ResumeLayout(false);
@@ -264,7 +264,7 @@ namespace Organizer
         private System.Windows.Forms.DataGridView StudentsDataGrid;
         private System.Windows.Forms.TableLayoutPanel ButtonsLayout;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button StudentsInfo;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

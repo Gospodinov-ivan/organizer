@@ -61,10 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\AddStudent.cs" />
-    <Compile Include="Class\Connection.cs" />
-    <Compile Include="Class\GetStudents.cs" />
-    <Compile Include="Class\Student.cs" />
+    <Compile Include="Forms\StudentsInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentsInfoForm.Designer.cs">
+      <DependentUpon>StudentsInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\AddStudent.cs" />
+    <Compile Include="Students\Connection.cs" />
+    <Compile Include="Students\DelStudent.cs" />
+    <Compile Include="Students\GetGroupsList.cs" />
+    <Compile Include="Students\GetInfo.cs" />
+    <Compile Include="Students\GetStudents.cs" />
+    <Compile Include="Students\Student.cs" />
     <Compile Include="Forms\AddStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +94,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Students\StudentInfo.cs" />
+    <Compile Include="Students\UpdateStudentsTable.cs" />
     <EmbeddedResource Include="Forms\AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentsInfoForm.resx">
+      <DependentUpon>StudentsInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,9 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LockImage.bmp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lock.png" />

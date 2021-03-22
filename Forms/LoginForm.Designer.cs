@@ -32,17 +32,17 @@ namespace Organizer
             this.loginLayout = new System.Windows.Forms.TableLayoutPanel();
             this.LoginText = new System.Windows.Forms.TextBox();
             this.PasswordText = new System.Windows.Forms.MaskedTextBox();
+            this.LockPicture = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.LogInButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.LockPicture = new System.Windows.Forms.PictureBox();
             this.loginLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LockPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LockPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // loginLayout
@@ -82,6 +82,17 @@ namespace Organizer
             this.PasswordText.PasswordChar = '*';
             this.PasswordText.Size = new System.Drawing.Size(268, 20);
             this.PasswordText.TabIndex = 3;
+            // 
+            // LockPicture
+            // 
+            this.LockPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LockPicture.Image = global::Organizer.Properties.Resources._lock;
+            this.LockPicture.Location = new System.Drawing.Point(84, 15);
+            this.LockPicture.Name = "LockPicture";
+            this.LockPicture.Size = new System.Drawing.Size(106, 93);
+            this.LockPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LockPicture.TabIndex = 0;
+            this.LockPicture.TabStop = false;
             // 
             // label1
             // 
@@ -132,17 +143,6 @@ namespace Organizer
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // LockPicture
-            // 
-            this.LockPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LockPicture.Image = global::Organizer.Properties.Resources._lock;
-            this.LockPicture.Location = new System.Drawing.Point(84, 15);
-            this.LockPicture.Name = "LockPicture";
-            this.LockPicture.Size = new System.Drawing.Size(106, 93);
-            this.LockPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LockPicture.TabIndex = 0;
-            this.LockPicture.TabStop = false;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,11 +159,11 @@ namespace Organizer
             this.Text = "Войти";
             this.loginLayout.ResumeLayout(false);
             this.loginLayout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LockPicture)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.LockPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
