@@ -6,11 +6,9 @@ namespace Organizer
 {
     public partial class LoginForm : Form
     {
-        public LoginForm()
-        {
+        public LoginForm()=>
             InitializeComponent();
-        }
-
+        
         private void LogInButton_Click(object sender, EventArgs e)
         {
             Connection connection = new Connection();

@@ -3,8 +3,16 @@ using System.Collections.Generic;
 
 namespace Organizer
 {
+    /// <summary>
+    /// производит выборки элементов из таблицы Students
+    /// </summary>
     class GetStudents:Connection
     {
+        /// <summary>
+        /// Осуществляет запрос к базе данных 
+        /// на выборку всех элементов из таблицы Students
+        /// </summary>
+        /// <returns></returns>
         public List<Student> GetAll()
         {
             connection.Open();
@@ -22,6 +30,13 @@ namespace Organizer
             return students;
         }
 
+        /// <summary>
+        /// Осуществляет запрос к базе данных 
+        /// на выборку всех студентов заданной группы
+        /// из таблицы Students
+        /// </summary>
+        /// <param name="group"></param>
+        /// <returns></returns>
         public List<Student> GetByGroup(string group)
         {
             connection.Open();
@@ -38,5 +53,6 @@ namespace Organizer
                                                         (string)reader[4]));
             return students;
         }
+
     }
 }

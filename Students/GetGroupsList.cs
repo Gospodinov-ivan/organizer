@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Organizer
 {
+    /// <summary>
+    /// Производит поиск названий групп
+    /// </summary>
     class GetGroupsList:Connection
     {
         public List<string> Get()

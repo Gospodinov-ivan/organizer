@@ -1,5 +1,8 @@
 ﻿namespace Organizer
 {
+    /// <summary>
+    /// предоставляет абстракцию над таблицей Students
+    /// </summary>
     class Student
     {
         public int ID { get; set; }

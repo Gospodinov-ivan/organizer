@@ -82,5 +82,11 @@ namespace Organizer
             StudentsInfoForm studentsInfo = new StudentsInfoForm();
             studentsInfo.Show();
         }
+
+        private void DabtorsButton_Click(object sender, EventArgs e)
+        {
+            ShowDebtorsForm showDebtors = new ShowDebtorsForm();
+            showDebtors.Show();
+        }
     }
 }

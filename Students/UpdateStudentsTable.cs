@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Organizer
 {
+    /// <summary>
+    /// Производит запрос на обновление записей в таблице Students
+    /// </summary>
     class UpdateStudentsTable:Connection
     {
         public void Update(List<Student> studentsList)

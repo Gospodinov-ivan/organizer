@@ -49,6 +49,7 @@ namespace Organizer
             this.AddButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.добавитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DabtorsButton = new System.Windows.Forms.Button();
             this.MainLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsDataGrid)).BeginInit();
             this.ButtonsLayout.SuspendLayout();
@@ -164,15 +165,17 @@ namespace Organizer
             // 
             // ButtonsLayout
             // 
-            this.ButtonsLayout.ColumnCount = 4;
-            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.ButtonsLayout.ColumnCount = 5;
+            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.ButtonsLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.ButtonsLayout.Controls.Add(this.DeleteButton, 0, 0);
             this.ButtonsLayout.Controls.Add(this.StudentsInfo, 0, 0);
             this.ButtonsLayout.Controls.Add(this.AddButton, 0, 0);
             this.ButtonsLayout.Controls.Add(this.UpdateButton, 0, 0);
+            this.ButtonsLayout.Controls.Add(this.DabtorsButton, 4, 0);
             this.ButtonsLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ButtonsLayout.Location = new System.Drawing.Point(3, 380);
             this.ButtonsLayout.Name = "ButtonsLayout";
@@ -184,9 +187,9 @@ namespace Organizer
             // DeleteButton
             // 
             this.DeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeleteButton.Location = new System.Drawing.Point(399, 3);
+            this.DeleteButton.Location = new System.Drawing.Point(319, 3);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(192, 37);
+            this.DeleteButton.Size = new System.Drawing.Size(152, 37);
             this.DeleteButton.TabIndex = 6;
             this.DeleteButton.Text = "Удалить";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -195,9 +198,9 @@ namespace Organizer
             // StudentsInfo
             // 
             this.StudentsInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.StudentsInfo.Location = new System.Drawing.Point(597, 3);
+            this.StudentsInfo.Location = new System.Drawing.Point(477, 3);
             this.StudentsInfo.Name = "StudentsInfo";
-            this.StudentsInfo.Size = new System.Drawing.Size(194, 37);
+            this.StudentsInfo.Size = new System.Drawing.Size(152, 37);
             this.StudentsInfo.TabIndex = 5;
             this.StudentsInfo.Text = "Информация";
             this.StudentsInfo.UseVisualStyleBackColor = true;
@@ -208,7 +211,7 @@ namespace Organizer
             this.AddButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddButton.Location = new System.Drawing.Point(3, 3);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(192, 37);
+            this.AddButton.Size = new System.Drawing.Size(152, 37);
             this.AddButton.TabIndex = 4;
             this.AddButton.Text = "Добавить";
             this.AddButton.UseVisualStyleBackColor = true;
@@ -217,9 +220,9 @@ namespace Organizer
             // UpdateButton
             // 
             this.UpdateButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UpdateButton.Location = new System.Drawing.Point(201, 3);
+            this.UpdateButton.Location = new System.Drawing.Point(161, 3);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(192, 37);
+            this.UpdateButton.Size = new System.Drawing.Size(152, 37);
             this.UpdateButton.TabIndex = 3;
             this.UpdateButton.Text = "Редактировать";
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -230,6 +233,17 @@ namespace Organizer
             this.добавитьПользователяToolStripMenuItem.Name = "добавитьПользователяToolStripMenuItem";
             this.добавитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.добавитьПользователяToolStripMenuItem.Text = "Добавить пользователя";
+            // 
+            // DabtorsButton
+            // 
+            this.DabtorsButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DabtorsButton.Location = new System.Drawing.Point(635, 3);
+            this.DabtorsButton.Name = "DabtorsButton";
+            this.DabtorsButton.Size = new System.Drawing.Size(156, 37);
+            this.DabtorsButton.TabIndex = 7;
+            this.DabtorsButton.Text = "Задолженники";
+            this.DabtorsButton.UseVisualStyleBackColor = true;
+            this.DabtorsButton.Click += new System.EventHandler(this.DabtorsButton_Click);
             // 
             // Form1
             // 
@@ -273,6 +287,7 @@ namespace Organizer
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.ToolStripMenuItem добавитьПользователяToolStripMenuItem;
+        private System.Windows.Forms.Button DabtorsButton;
     }
 }
 

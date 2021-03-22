@@ -30,14 +30,14 @@ namespace Organizer.Forms
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.GroupText = new System.Windows.Forms.TextBox();
-            this.SurnameText = new System.Windows.Forms.TextBox();
-            this.ExemsText = new System.Windows.Forms.TextBox();
             this.ScoresText = new System.Windows.Forms.TextBox();
+            this.ExemsText = new System.Windows.Forms.TextBox();
+            this.SurnameText = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.GroupText = new System.Windows.Forms.TextBox();
             this.AddButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,30 @@ namespace Organizer.Forms
             this.tableLayoutPanel1.Size = new System.Drawing.Size(339, 336);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // ScoresText
+            // 
+            this.ScoresText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ScoresText.Location = new System.Drawing.Point(3, 230);
+            this.ScoresText.Name = "ScoresText";
+            this.ScoresText.Size = new System.Drawing.Size(333, 20);
+            this.ScoresText.TabIndex = 7;
+            // 
+            // ExemsText
+            // 
+            this.ExemsText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ExemsText.Location = new System.Drawing.Point(3, 165);
+            this.ExemsText.Name = "ExemsText";
+            this.ExemsText.Size = new System.Drawing.Size(333, 20);
+            this.ExemsText.TabIndex = 6;
+            // 
+            // SurnameText
+            // 
+            this.SurnameText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SurnameText.Location = new System.Drawing.Point(3, 100);
+            this.SurnameText.Name = "SurnameText";
+            this.SurnameText.Size = new System.Drawing.Size(333, 20);
+            this.SurnameText.TabIndex = 5;
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -81,15 +105,15 @@ namespace Organizer.Forms
             this.label1.TabIndex = 0;
             this.label1.Text = "Группа";
             // 
-            // label2
+            // label4
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Фамилия";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(58, 199);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(222, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Результаты по зачетам по 5 дисциплинам";
             // 
             // label3
             // 
@@ -102,15 +126,15 @@ namespace Organizer.Forms
             this.label3.Text = "Результаты экзаменов по 5 дисциплинам";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // label2
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(222, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Результаты по зачетам по 5 дисциплинам";
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(141, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Фамилия";
             // 
             // GroupText
             // 
@@ -119,30 +143,6 @@ namespace Organizer.Forms
             this.GroupText.Name = "GroupText";
             this.GroupText.Size = new System.Drawing.Size(333, 20);
             this.GroupText.TabIndex = 4;
-            // 
-            // SurnameText
-            // 
-            this.SurnameText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SurnameText.Location = new System.Drawing.Point(3, 100);
-            this.SurnameText.Name = "SurnameText";
-            this.SurnameText.Size = new System.Drawing.Size(333, 20);
-            this.SurnameText.TabIndex = 5;
-            // 
-            // ExemsText
-            // 
-            this.ExemsText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ExemsText.Location = new System.Drawing.Point(3, 165);
-            this.ExemsText.Name = "ExemsText";
-            this.ExemsText.Size = new System.Drawing.Size(333, 20);
-            this.ExemsText.TabIndex = 6;
-            // 
-            // ScoresText
-            // 
-            this.ScoresText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ScoresText.Location = new System.Drawing.Point(3, 230);
-            this.ScoresText.Name = "ScoresText";
-            this.ScoresText.Size = new System.Drawing.Size(333, 20);
-            this.ScoresText.TabIndex = 7;
             // 
             // AddButton
             // 

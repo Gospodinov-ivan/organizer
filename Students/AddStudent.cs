@@ -2,7 +2,11 @@
 
 namespace Organizer
 {
-    class AddStudent:Connection
+    /// <summary>
+    /// Производит запрос к базе данных 
+    /// на добавление записи в таблицу Student
+    /// </summary>
+    class AddStudent :Connection
     {
        public void Add(Student student)
         {

@@ -1,21 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Organizer
+﻿namespace Organizer
 {
+    /// <summary>
+    /// Предоставляет абстракцию 
+    /// над таблицей c задолжниками
+    /// </summary>
     class StudentInfo
     {
-        public string surname { get; set; }
-        public double roundedMark { get; set; }
-        public int noAttistation { get; set; }
+        public int ID { get; set; }
+        public string Surname { get; set; }
+        public double RoundedMark { get; set; }
+        public int NoAttistation { get; set; }
+        public string Group { get; set; }
+
         public StudentInfo(string surname, double mark, int noAttistation)
         {
-            roundedMark = mark;
-            this.noAttistation = noAttistation;
-            this.surname = surname; 
+            RoundedMark = mark;
+            NoAttistation = noAttistation;
+            Surname = surname; 
+        }
+
+        public StudentInfo(int ID, string group, string surname,int noAttistation)
+        {
+            this.ID = ID;
+            Group = group;
+            NoAttistation = noAttistation;
+            Surname = surname;
         }
     }
 }

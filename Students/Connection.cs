@@ -2,6 +2,9 @@
 
 namespace Organizer
 {
+    /// <summary>
+    /// Предоставляет соединение к базе данных
+    /// </summary>
     class Connection
     {
         private const string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;" +
