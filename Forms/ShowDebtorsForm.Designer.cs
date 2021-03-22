@@ -44,7 +44,7 @@ namespace Organizer.Forms
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Subject = new System.Windows.Forms.ComboBox();
             this.Mark = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ChangeExem = new System.Windows.Forms.Button();
             this.Students = new System.Windows.Forms.ComboBox();
             this.DelStudents = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -156,7 +156,7 @@ namespace Organizer.Forms
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel2.Controls.Add(this.Subject, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.Mark, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.ChangeExem, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Students, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 311);
@@ -197,15 +197,16 @@ namespace Organizer.Forms
             this.Mark.TabIndex = 6;
             this.Mark.Text = "2";
             // 
-            // button1
+            // ChangeExem
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Изменить результат экзамена";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ChangeExem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ChangeExem.Location = new System.Drawing.Point(3, 3);
+            this.ChangeExem.Name = "ChangeExem";
+            this.ChangeExem.Size = new System.Drawing.Size(223, 23);
+            this.ChangeExem.TabIndex = 3;
+            this.ChangeExem.Text = "Изменить результат экзамена";
+            this.ChangeExem.UseVisualStyleBackColor = true;
+            this.ChangeExem.Click += new System.EventHandler(this.ChangeExem_Click);
             // 
             // Students
             // 
@@ -225,6 +226,7 @@ namespace Organizer.Forms
             this.DelStudents.TabIndex = 4;
             this.DelStudents.Text = "Отчислить студентов с 3 и более задолженостями";
             this.DelStudents.UseVisualStyleBackColor = true;
+            this.DelStudents.Click += new System.EventHandler(this.DelStudents_Click);
             // 
             // ShowDebtorsForm
             // 
@@ -252,7 +254,7 @@ namespace Organizer.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ChangeExem;
         private System.Windows.Forms.Button DelStudents;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem сортироватьToolStripMenuItem;

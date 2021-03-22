@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Organizer.Forms
@@ -9,12 +10,13 @@ namespace Organizer.Forms
             InitializeComponent();
 
         DabtorTable table = new DabtorTable();
+        GetInfo info = new GetInfo();
+        Form1 main = (Form1)Application.OpenForms[0];
 
         private void UpdateViews()
         {
             Students.Items.Clear();
             DabtorsData.Rows.Clear();
-            GetInfo info = new GetInfo();
             var dabtors = info.GetDebtorsList();
             foreach (StudentInfo student in dabtors)
             {
@@ -31,8 +33,8 @@ namespace Organizer.Forms
         {
             DabtorsData.Rows.Clear();
              var sorted = table.sortBy("Группа");
-            foreach (StudentInfo student in sorted)
-                DabtorsData.Rows.Add(student.ID,
+                 foreach (StudentInfo student in sorted)
+                    DabtorsData.Rows.Add(student.ID,
                                         student.Group,
                                             student.Surname,
                                                 student.NoAttistation);
@@ -60,9 +62,51 @@ namespace Organizer.Forms
                                                         student.NoAttistation);
         }
 
-        private void ShowDebtorsForm_Load(object sender, EventArgs e)
+        private void ShowDebtorsForm_Load(object sender, EventArgs e)=>
+                                                                 UpdateViews();
+        
+
+        private void ChangeExem_Click(object sender, EventArgs e)
         {
-            UpdateViews();
+            GetStudents students = new GetStudents();
+
+            if (Students.Text.Length != 0)
+            {
+                int subject = Subject.SelectedIndex;
+                string studentSurname = Students.Text;
+                string mark = Mark.Text;
+                var student = students.getConcrete(studentSurname)[0];
+                string newMark = "";
+                for(int markIndex = 0; markIndex<5;markIndex++)
+                    if (markIndex == subject)
+                        newMark += mark;
+                    else
+                        newMark += student.Exems[markIndex];
+                
+
+                Student updated = new Student(student.ID,
+                                                 student.Group,
+                                                    student.Surname,
+                                                       newMark,
+                                                         student.Scores);
+
+                UpdateStudentsTable update = new UpdateStudentsTable();
+                List<Student> students1 = new List<Student>{updated};
+                update.Update(students1);
+                main.UpdateData();
+                UpdateViews();
+            }
+
+        }
+
+        private void DelStudents_Click(object sender, EventArgs e)
+        {
+            DelStudent del = new DelStudent();
+            foreach (StudentInfo student in info.GetDebtorsList())
+                if (student.NoAttistation >= 3) del.Del(student.ID);
+            
+            main.UpdateData();
+                UpdateViews();
         }
     }
 }

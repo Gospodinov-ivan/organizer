@@ -51,6 +51,25 @@ namespace Organizer
                                                  (string)reader[2],
                                                     (string)reader[3],
                                                         (string)reader[4]));
+            connection.Close();
+            return students;
+        }
+       ///поиск конкретного студента по фамилии
+       public List<Student> getConcrete(string surname)
+        {
+            connection.Open();
+            var getCommand = $"SELECT * FROM Students WHERE [Surname] = '{surname}'";
+            var command = new OleDbCommand(getCommand, connection);
+            var reader = command.ExecuteReader();
+            var students = new List<Student>();
+
+            while (reader.Read())
+                students.Add(new Student((int)reader[0],
+                                            (string)reader[1],
+                                                 (string)reader[2],
+                                                    (string)reader[3],
+                                                        (string)reader[4]));
+            connection.Close();
             return students;
         }
 
