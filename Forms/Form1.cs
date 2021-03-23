@@ -94,5 +94,17 @@ namespace Organizer
             UsersManagement usersManagement = new UsersManagement();
             usersManagement.ShowDialog();
         }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            AboutMecs about = new AboutMecs();
+            about.ShowDialog();
+        }
+
+        private void ShedulerButton_Click(object sender, EventArgs e)
+        {
+            Shedulescs shedulescs = new Shedulescs();
+            shedulescs.Show();
+        }
     }
 }

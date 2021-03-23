@@ -61,6 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AboutMecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutMecs.Designer.cs">
+      <DependentUpon>AboutMecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shedulescs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Shedulescs.Designer.cs">
+      <DependentUpon>Shedulescs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UsersManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,10 @@
     <Compile Include="Forms\StudentsInfoForm.Designer.cs">
       <DependentUpon>StudentsInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sheduler\AddEvent.cs" />
+    <Compile Include="Sheduler\DelEvent.cs" />
+    <Compile Include="Sheduler\Event.cs" />
+    <Compile Include="Sheduler\GetEvent.cs" />
     <Compile Include="Students\AddStudent.cs" />
     <Compile Include="Students\Connection.cs" />
     <Compile Include="Students\DabtorTable.cs" />
@@ -114,8 +130,14 @@
     <Compile Include="Users\GetUserNames.cs" />
     <Compile Include="Users\UpdatePassword.cs" />
     <Compile Include="Users\ValidateUser.cs" />
+    <EmbeddedResource Include="Forms\AboutMecs.resx">
+      <DependentUpon>AboutMecs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shedulescs.resx">
+      <DependentUpon>Shedulescs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UsersManagement.resx">
       <DependentUpon>UsersManagement.cs</DependentUpon>

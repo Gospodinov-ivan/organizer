@@ -52,7 +52,7 @@ namespace Organizer
             this.добавитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.органайзерToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.AddUser = new System.Windows.Forms.ToolStripMenuItem();
-            this.Events = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShedulerButton = new System.Windows.Forms.ToolStripMenuItem();
             this.About = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.MainLayout.SuspendLayout();
@@ -256,7 +256,7 @@ namespace Organizer
             // 
             this.органайзерToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddUser,
-            this.Events,
+            this.ShedulerButton,
             this.About});
             this.органайзерToolStripMenuItem1.Name = "органайзерToolStripMenuItem1";
             this.органайзерToolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
@@ -269,17 +269,19 @@ namespace Organizer
             this.AddUser.Text = "Управление пользователями";
             this.AddUser.Click += new System.EventHandler(this.AddUser_Click);
             // 
-            // Events
+            // ShedulerButton
             // 
-            this.Events.Name = "Events";
-            this.Events.Size = new System.Drawing.Size(205, 22);
-            this.Events.Text = "Планировщик событий";
+            this.ShedulerButton.Name = "ShedulerButton";
+            this.ShedulerButton.Size = new System.Drawing.Size(234, 22);
+            this.ShedulerButton.Text = "Планировщик событий";
+            this.ShedulerButton.Click += new System.EventHandler(this.ShedulerButton_Click);
             // 
             // About
             // 
             this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(205, 22);
+            this.About.Size = new System.Drawing.Size(234, 22);
             this.About.Text = "О разработчике";
+            this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // Form1
             // 
@@ -328,7 +330,7 @@ namespace Organizer
         private System.Windows.Forms.Button DabtorsButton;
         private System.Windows.Forms.ToolStripMenuItem органайзерToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem AddUser;
-        private System.Windows.Forms.ToolStripMenuItem Events;
+        private System.Windows.Forms.ToolStripMenuItem ShedulerButton;
         private System.Windows.Forms.ToolStripMenuItem About;
     }
 }
