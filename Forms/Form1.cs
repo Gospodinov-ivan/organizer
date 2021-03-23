@@ -88,5 +88,11 @@ namespace Organizer
             ShowDebtorsForm showDebtors = new ShowDebtorsForm();
             showDebtors.Show();
         }
+
+        private void AddUser_Click(object sender, EventArgs e)
+        {
+            UsersManagement usersManagement = new UsersManagement();
+            usersManagement.ShowDialog();
+        }
     }
 }

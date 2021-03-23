@@ -48,8 +48,13 @@ namespace Organizer
             this.StudentsInfo = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
-            this.добавитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DabtorsButton = new System.Windows.Forms.Button();
+            this.добавитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.органайзерToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.Events = new System.Windows.Forms.ToolStripMenuItem();
+            this.About = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.MainLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentsDataGrid)).BeginInit();
             this.ButtonsLayout.SuspendLayout();
@@ -57,6 +62,8 @@ namespace Organizer
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.органайзерToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -228,12 +235,6 @@ namespace Organizer
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // добавитьПользователяToolStripMenuItem
-            // 
-            this.добавитьПользователяToolStripMenuItem.Name = "добавитьПользователяToolStripMenuItem";
-            this.добавитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.добавитьПользователяToolStripMenuItem.Text = "Добавить пользователя";
-            // 
             // DabtorsButton
             // 
             this.DabtorsButton.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -244,6 +245,41 @@ namespace Organizer
             this.DabtorsButton.Text = "Задолженники";
             this.DabtorsButton.UseVisualStyleBackColor = true;
             this.DabtorsButton.Click += new System.EventHandler(this.DabtorsButton_Click);
+            // 
+            // добавитьПользователяToolStripMenuItem
+            // 
+            this.добавитьПользователяToolStripMenuItem.Name = "добавитьПользователяToolStripMenuItem";
+            this.добавитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.добавитьПользователяToolStripMenuItem.Text = "Добавить пользователя";
+            // 
+            // органайзерToolStripMenuItem1
+            // 
+            this.органайзерToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddUser,
+            this.Events,
+            this.About});
+            this.органайзерToolStripMenuItem1.Name = "органайзерToolStripMenuItem1";
+            this.органайзерToolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
+            this.органайзерToolStripMenuItem1.Text = "Органайзер";
+            // 
+            // AddUser
+            // 
+            this.AddUser.Name = "AddUser";
+            this.AddUser.Size = new System.Drawing.Size(234, 22);
+            this.AddUser.Text = "Управление пользователями";
+            this.AddUser.Click += new System.EventHandler(this.AddUser_Click);
+            // 
+            // Events
+            // 
+            this.Events.Name = "Events";
+            this.Events.Size = new System.Drawing.Size(205, 22);
+            this.Events.Text = "Планировщик событий";
+            // 
+            // About
+            // 
+            this.About.Name = "About";
+            this.About.Size = new System.Drawing.Size(205, 22);
+            this.About.Text = "О разработчике";
             // 
             // Form1
             // 
@@ -257,6 +293,8 @@ namespace Organizer
             this.Text = "Студенты";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.MainLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudentsDataGrid)).EndInit();
             this.ButtonsLayout.ResumeLayout(false);
@@ -288,6 +326,10 @@ namespace Organizer
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.ToolStripMenuItem добавитьПользователяToolStripMenuItem;
         private System.Windows.Forms.Button DabtorsButton;
+        private System.Windows.Forms.ToolStripMenuItem органайзерToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem AddUser;
+        private System.Windows.Forms.ToolStripMenuItem Events;
+        private System.Windows.Forms.ToolStripMenuItem About;
     }
 }
 

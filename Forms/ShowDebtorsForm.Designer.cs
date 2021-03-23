@@ -153,7 +153,7 @@ namespace Organizer.Forms
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.9085F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.00436F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.Controls.Add(this.Subject, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.Mark, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.ChangeExem, 0, 0);
@@ -176,9 +176,9 @@ namespace Organizer.Forms
             "Дисциплина 3",
             "Дисциплина 4",
             "Дисциплина 5"});
-            this.Subject.Location = new System.Drawing.Point(449, 3);
+            this.Subject.Location = new System.Drawing.Point(448, 3);
             this.Subject.Name = "Subject";
-            this.Subject.Size = new System.Drawing.Size(120, 21);
+            this.Subject.Size = new System.Drawing.Size(119, 21);
             this.Subject.TabIndex = 8;
             this.Subject.Text = "Дисциплина 1";
             // 
@@ -191,9 +191,9 @@ namespace Organizer.Forms
             "3",
             "4",
             "5"});
-            this.Mark.Location = new System.Drawing.Point(575, 3);
+            this.Mark.Location = new System.Drawing.Point(573, 3);
             this.Mark.Name = "Mark";
-            this.Mark.Size = new System.Drawing.Size(42, 21);
+            this.Mark.Size = new System.Drawing.Size(44, 21);
             this.Mark.TabIndex = 6;
             this.Mark.Text = "2";
             // 
@@ -202,7 +202,7 @@ namespace Organizer.Forms
             this.ChangeExem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChangeExem.Location = new System.Drawing.Point(3, 3);
             this.ChangeExem.Name = "ChangeExem";
-            this.ChangeExem.Size = new System.Drawing.Size(223, 23);
+            this.ChangeExem.Size = new System.Drawing.Size(222, 23);
             this.ChangeExem.TabIndex = 3;
             this.ChangeExem.Text = "Изменить результат экзамена";
             this.ChangeExem.UseVisualStyleBackColor = true;
@@ -212,7 +212,7 @@ namespace Organizer.Forms
             // 
             this.Students.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Students.FormattingEnabled = true;
-            this.Students.Location = new System.Drawing.Point(232, 3);
+            this.Students.Location = new System.Drawing.Point(231, 3);
             this.Students.Name = "Students";
             this.Students.Size = new System.Drawing.Size(211, 21);
             this.Students.TabIndex = 7;
